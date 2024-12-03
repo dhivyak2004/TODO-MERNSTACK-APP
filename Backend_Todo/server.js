@@ -6,16 +6,9 @@
  //create an instance of express
  const app=express();
  app.use(express.json());
- app.use(cors(
-   {
-    origin :[""],
-    methods:["POST","GET"]
-    credentials:true
-   }
-  
-  ))
+ app.use(cors( ))
 
-mongoose.connect('mongodb+srv://kdhivya192:test123@todo.pgrja.mongodb.net/TODO?retryWrites=true&w=majority&appName=TODO');
+
 
  //sample in-memory storage for todo items
 //  let todos=[];
