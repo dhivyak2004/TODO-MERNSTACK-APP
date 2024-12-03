@@ -6,7 +6,14 @@
  //create an instance of express
  const app=express();
  app.use(express.json());
- app.use(cors())
+ app.use(cors(
+   {
+    origin :[""],
+    methods:["POST","GET"]
+    credentials:true
+   }
+  
+  ))
 
  //sample in-memory storage for todo items
 //  let todos=[];
