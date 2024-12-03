@@ -15,6 +15,8 @@
   
   ))
 
+mongoose.connect('mongodb+srv://kdhivya192:test123@todo.pgrja.mongodb.net/TODO?retryWrites=true&w=majority&appName=TODO');
+
  //sample in-memory storage for todo items
 //  let todos=[];
 
